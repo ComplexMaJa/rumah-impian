@@ -3,6 +3,13 @@ import { FaChevronRight } from 'react-icons/fa';
 import './Hero.css';
 
 const Hero = () => {
+  const scrollToRecommendations = () => {
+    const element = document.getElementById('rekomendasi');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="hero">
       <div className="hero__pattern hero__pattern--left"></div>
@@ -17,10 +24,10 @@ const Hero = () => {
             Rumah Impian hadir untuk temukan rumah terbaik untukmu, untuk di jual ataupun di sewa dengan sumber terpercaya.
           </p>
           <div className="hero__actions">
-            <button className="btn-primary">
+            <button className="btn-primary" onClick={scrollToRecommendations}>
               Temukan Rumah
             </button>
-            <button className="btn-icon">
+            <button className="btn-icon" onClick={scrollToRecommendations}>
               <FaChevronRight />
             </button>
           </div>
@@ -33,5 +40,6 @@ const Hero = () => {
     </section>
   );
 };
+
 
 export default Hero;
