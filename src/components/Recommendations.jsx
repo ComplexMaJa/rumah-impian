@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaBed, FaBath, FaVectorSquare } from 'react-icons/fa';
 import HouseModal from './HouseModal';
 import './Recommendations.css';
@@ -158,7 +159,7 @@ const Recommendations = () => {
         </div>
         
         <div className="recommendations__more">
-          <a href="#more">Lihat Lainnya..</a>
+          <Link to="/rumah" className="recommendations__more-btn">Lihat Lainnya..</Link>
         </div>
       </div>
 

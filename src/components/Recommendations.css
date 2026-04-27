@@ -170,14 +170,22 @@
   margin-top: 3rem;
 }
 
-.recommendations__more a {
-  color: var(--text-dark);
-  font-weight: 500;
+.recommendations__more-btn {
+  display: inline-block;
+  background-color: var(--primary-green);
+  color: var(--white) !important;
+  padding: 0.8rem 2.5rem;
+  border-radius: 8px;
+  font-weight: 600;
   text-decoration: none;
   font-size: 1rem;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-.recommendations__more a:hover {
-  color: var(--primary-green);
+.recommendations__more-btn:hover {
+  background-color: var(--secondary-green);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
+

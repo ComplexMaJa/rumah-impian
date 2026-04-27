@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
+import Rumah from './pages/Rumah';
 import './App.css';
 
 function App() {
@@ -28,9 +29,17 @@ function App() {
             <Footer />
           </>
         } />
+        <Route path="/rumah" element={
+          <>
+            <Navbar />
+            <Rumah />
+            <Footer />
+          </>
+        } />
       </Routes>
     </div>
   );
 }
+
 
 export default App;
