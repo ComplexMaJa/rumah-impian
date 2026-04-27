@@ -1,16 +1,62 @@
-# React + Vite
+# Rumah Impian 🏠
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Rumah Impian is a modern real estate platform built with React and Vite. It provides a premium user experience for finding dream homes, featuring property listings, detailed modals, and a specialized house search page.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Dynamic Landing Page**: Responsive hero section with smooth scroll navigation.
+- **Property Recommendations**: Curated list of properties with active highlighting.
+- **Interactive Carousel**: Featured rooms carousel with dynamic active states.
+- **House Listing Page**: Full catalog of houses with real-time search and multi-criteria sorting (Price, Area, Date).
+- **Detail Modals**: Comprehensive property details including image galleries, features, and descriptions.
+- **Authentication System**: Mock login and registration flow with persistent user state.
+- **Responsive Design**: Optimized for both desktop and mobile viewing.
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19
+- **Build Tool**: Vite 8
+- **Routing**: React Router 7
+- **Styling**: Vanilla CSS (Modular Pattern)
+- **Icons**: React Icons
+- **State Management**: React Context API
 
-## Expanding the ESLint configuration
+## 🛠️ Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v18 or higher)
+- pnpm (recommended) or npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/rumah-impian.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+3. Start the development server:
+   ```bash
+   pnpm run dev
+   ```
+
+## 📂 Project Structure
+
+```
+src/
+├── components/     # Reusable UI components (Navbar, Footer, Modal, etc.)
+├── context/        # State management (AuthContext)
+├── pages/          # Page-level components (Home, Rumah, Profile, etc.)
+├── assets/         # Static images and styles
+├── App.jsx         # Main routing and layout
+└── main.jsx        # Entry point
+```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
