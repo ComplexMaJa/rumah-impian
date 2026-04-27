@@ -1,0 +1,151 @@
+.consultation {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  color: var(--white);
+}
+
+.consultation__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 992px) {
+  .consultation__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.consultation__content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.consultation__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 2.5rem;
+}
+
+.consultation__subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.consultation__info-group {
+  margin-bottom: 2rem;
+}
+
+.consultation__info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.info-icon {
+  margin-top: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.consultation__info-item p {
+  line-height: 1.5;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.consultation__social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: var(--white);
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--primary-green);
+}
+
+.social-text {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.consultation__form-wrapper {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+}
+
+.consultation__form {
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+  color: var(--primary-green);
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background-color: #d1d5db; /* gray background as in image */
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.form-input::placeholder {
+  color: var(--text-light);
+}
+
+.form-input:focus {
+  outline: 2px solid var(--primary-green);
+  background-color: #e5e7eb;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary-green);
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.form-submit:hover {
+  background-color: var(--secondary-green);
+}

@@ -1,0 +1,98 @@
+.services {
+  padding: 6rem 0;
+  background-color: var(--light-bg);
+}
+
+.services__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.services__title {
+  color: var(--primary-green);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.services__subtitle {
+  color: var(--text-dark);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: var(--white);
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  cursor: default;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-card__icon {
+  width: 70px;
+  height: 70px;
+  background-color: #e6f4ea;
+  color: var(--primary-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.service-card__title {
+  color: var(--primary-green);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.service-card__description {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Active State (Property Baru) */
+.service-card--active {
+  background: linear-gradient(135deg, #077941, #04522c);
+  color: var(--white);
+}
+
+.service-card--active .service-card__icon {
+  background-color: var(--white);
+  color: var(--primary-green);
+}
+
+.service-card--active .service-card__title,
+.service-card--active .service-card__description {
+  color: var(--white);
+}
+
+@media (max-width: 992px) {
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+}

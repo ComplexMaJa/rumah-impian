@@ -1,0 +1,132 @@
+.hero {
+  position: relative;
+  background-color: var(--primary-green);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero__container {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__content {
+  width: 50%;
+  padding: 4rem 4rem 4rem 0;
+  color: var(--white);
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero__subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  max-width: 450px;
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--white);
+  color: var(--primary-green);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background-color: #f0fdf4;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.btn-icon {
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon:hover {
+  transform: translateX(5px);
+}
+
+/* Image wrapper with diagonal cut */
+.hero__image-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  z-index: 1;
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dotted patterns */
+.hero__pattern {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-image: radial-gradient(circle, #a7f3d0 2px, transparent 2.5px);
+  background-size: 20px 20px;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.hero__pattern--left {
+  top: 20%;
+  left: -100px;
+  border-radius: 50%;
+}
+
+.hero__pattern--right {
+  top: 10%;
+  right: 40%;
+}
+
+@media (max-width: 992px) {
+  .hero__content {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__content {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  .hero__subtitle {
+    max-width: 100%;
+  }
+  .hero__actions {
+    justify-content: center;
+  }
+  .hero__image-wrapper {
+    display: none;
+  }
+}
