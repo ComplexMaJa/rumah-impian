@@ -1,3 +1,6 @@
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/51adc394-242d-43c6-901c-a3bc52ab8860" />
+
+
 # Rumah Impian 🏠
 
 Rumah Impian is a modern real estate platform built with React and Vite. It provides a premium user experience for finding dream homes, featuring property listings, detailed modals, and a specialized house search page.
