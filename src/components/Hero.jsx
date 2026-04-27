@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="hero">
       <div className="hero__pattern hero__pattern--left"></div>
       <div className="hero__pattern hero__pattern--right"></div>
-      
+
       <div className="container hero__container">
         <div className="hero__content animate-fade-in-up">
           <h1 className="hero__title">
@@ -18,7 +18,7 @@ const Hero = () => {
           </p>
           <div className="hero__actions">
             <button className="btn-primary">
-              Temukan Rumah 
+              Temukan Rumah
             </button>
             <button className="btn-icon">
               <FaChevronRight />
@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="hero__image-wrapper">
         <img src="/hero_house.png" alt="Rumah Impian Modern" className="hero__image" />
       </div>
